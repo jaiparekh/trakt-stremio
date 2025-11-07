@@ -424,7 +424,7 @@
                                     able to get private lists, watchlist and recommendations</span>
                                 <div class="mt-5 flex flex-col items-center">
                                     <a
-                                        :href="`https://trakt.tv/oauth/authorize?client_id=18bde7dcd858c86f9593addf9f66528f8c1443ec1bef9ecee501d1c5177ce281&redirect_uri=${encodeURIComponent(Consts.currentUrl)}&response_type=code`">
+                                        :href="`https://trakt.tv/oauth/authorize?client_id=339e932fab12c2c32c387e437e5a8235a1c7db3d0dd86fb33c9d2006d5f93706&redirect_uri=${encodeURIComponent(Consts.currentUrl)}&response_type=code`">
                                         <button type="button" id="Auth"
                                             class="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Login
                                             to Trakt.tv</button></a>
@@ -947,7 +947,7 @@ function updateAuthButton() {
     } else {
         document.getElementById('Auth').style.background = 'red';
         document.getElementById('Auth').innerHTML = 'Login to Trakt.tv';
-        document.getElementById('Auth').parentNode.href = `https://trakt.tv/oauth/authorize?client_id=18bde7dcd858c86f9593addf9f66528f8c1443ec1bef9ecee501d1c5177ce281&redirect_uri=${encodeURIComponent(Consts.currentUrl)}&response_type=code`;
+        document.getElementById('Auth').parentNode.href = `https://trakt.tv/oauth/authorize?client_id=339e932fab12c2c32c387e437e5a8235a1c7db3d0dd86fb33c9d2006d5f93706&redirect_uri=${encodeURIComponent(Consts.currentUrl)}&response_type=code`;
         document.getElementById('Auth').disabled = false;
     }
 }
